@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Telecom Inventory Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header bg-primary text-white text-center py-3 shadow-sm">
+        <h1 class="website-title">Telecom Inventory Management System</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-dark shadow-lg">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="nav-btn btn btn-dark text-uppercase" onclick="loadUsers()">Users</a>
+            <a href="#" class="nav-btn btn btn-dark text-uppercase" onclick="loadProducts()">Products</a>
+            <a href="#" class="nav-btn btn btn-dark text-uppercase" onclick="loadSuppliers()">Suppliers</a>
+            <a href="#" class="nav-btn btn btn-dark text-uppercase" onclick="loadStocks()">Stocks</a>
+            <button onclick="logout()" class="nav-btn btn btn-danger text-uppercase">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container mt-5">
+        <div id="mainContent">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
